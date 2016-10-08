@@ -1,6 +1,6 @@
 import angular from 'angular';
 import 'angular-mocks';
-import {techs} from './techs';
+import {dashboard} from './dashboard';
 
 const techsJson = [
   {
@@ -26,7 +26,7 @@ const techsJson = [
   }
 ];
 
-describe('techs component', () => {
+describe('dashboard component', () => {
   beforeEach(() => {
     angular
       .module('fountainTechs', ['app/techs/techs.html'])

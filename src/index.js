@@ -1,6 +1,6 @@
 import angular from 'angular';
 
-import {techsModule} from './app/techs/index';
+import {dashboardModule} from './app/dashboard/index';
 import 'angular-ui-router';
 import routesConfig from './routes';
 
@@ -14,9 +14,9 @@ import './app/services/http';
 import './index.scss';
 
 angular
-  .module('app', [techsModule, 'ui.router', 'services'])
+  .module('app', [dashboardModule, 'ui.router', 'services'])
   .config(routesConfig)
   .component('app', main)
-  .component('fountainHeader', header)
-  .component('fountainTitle', title)
-  .component('fountainFooter', footer);
+  .component('mainHeader', header)
+  .component('mainTitle', title)
+  .component('mainFooter', footer);

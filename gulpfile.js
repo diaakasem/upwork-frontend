@@ -30,6 +30,6 @@ function watch(done) {
 }
 
 function watchBuild(done) {
-  gulp.watch(conf.path.src('**/*'), gulp.series('default'));
+  gulp.watch(conf.path.src('app/**/*.{html,js,scss}'), gulp.series('clean', 'build'));
   done();
 }
